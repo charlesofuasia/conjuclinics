@@ -1,0 +1,152 @@
+:root {
+  --pry-color: #6ec1e4;
+  --sec-color: #54595f;
+  --accent-color-1: #61ce70;
+  --accent-color-2: #ffd600;
+  --accent-c0o0r-3: #4054b2;
+
+  /*root fonts*/
+  --header-font: "Roboto slab";
+  --font-style: "roboto";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header,
+main,
+footer {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: var(--header-font);
+}
+
+header {
+  background-color: var(--sec-color);
+  width: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--header-font);
+}
+h1 {
+  color: #fff;
+  padding-left: 0.6rem;
+  white-space: nowrap;
+  margin-top: 2rem;
+}
+#brand-box {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+#logo-box img {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: 1rem auto;
+}
+#menu {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.show .bar:nth-of-type(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.show .bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+.show .bar:nth-of-type(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.menu-list {
+  display: none;
+  background-color: var(--pry-color);
+  padding: 1rem;
+}
+.menu-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.menu-list ul li {
+  list-style: none;
+  flex: 1 1 100%;
+}
+.menu-list a {
+  text-decoration: none;
+  color: #000;
+  font-family: var(--header-font);
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  white-space: nowrap;
+}
+#tel {
+  color: #000;
+  font-size: 1.2rem;
+  font-family: var(--header-font);
+}
+#tel::before {
+  content: "📱 ";
+}
+.show.menu-list {
+  display: block;
+}
+/*Home page CSS*/
+#hero {
+  width: 100%;
+  position: relative;
+}
+#hero img {
+  width: 100%;
+  height: auto;
+}
+#hero .advert {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 15rem;
+  background-color: #cfccff;
+  padding: 1rem;
+  opacity: 0.6;
+}
+#hero .advert p {
+  font-family: var(--font-style);
+  font-size: 0.9rem;
+  color: #000;
+}
+#cta {
+  margin-top: 2rem;
+}
+.ctaBtn {
+  border: 1px solid #000;
+  background-color: var(--accent-color-1);
+  text-align: center;
+  font-family: var(--header-font);
+  font-size: 0.6rem;
+  max-width: 10rem;
+}
+main p {
+  font-family: var(--font-style);
+  font-size: 1.2rem;
+}
