@@ -41,7 +41,8 @@ h1 {
   white-space: nowrap;
   margin-top: 2rem;
 }
-h2 {
+h2,
+h3 {
   text-align: center;
   padding: 1rem;
 }
@@ -153,7 +154,8 @@ h2 {
   color: #000;
   font-weight: bold;
 }
-main p {
+main p,
+main pre {
   font-family: var(--font-style);
   font-size: 1.2rem;
 }
@@ -183,7 +185,8 @@ label.top {
 }
 label.top input,
 div.instruct,
-label.top select {
+label.top select,
+label.top textarea {
   display: block;
   width: 100%;
   max-width: 19rem;
@@ -199,4 +202,20 @@ label.side input {
 }
 div.instruct {
   margin-top: 1rem;
+}
+#contact {
+  max-width: 800px;
+  margin: 0 auto;
+}
+#submitBtn {
+  width: 90%;
+  max-width: 18rem;
+  margin: 3rem 2rem 1rem 0;
+}
+#response {
+  width: 80%;
+  max-width: 800px;
+  font-family: var(--font-style);
+  font-size: 1.2rem;
+  margin: 3rem auto;
 }
