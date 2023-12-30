@@ -235,11 +235,14 @@ footer div a {
   font-size: 0.9rem;
   color: #000;
 }
-.media-icons {
+footer .media-icons {
   display: flex;
   width: 100%;
   max-width: 10rem;
   flex-direction: row;
   justify-content: space-around;
   margin: 1rem auto;
+}
+footer p:last-of-type {
+  padding-top: 1.5rem;
 }
