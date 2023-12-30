@@ -29,4 +29,11 @@
     width: 100%;
     margin-top: 1rem;
   }
+  #hero .advert {
+    width: 25rem;
+  }
+  #hero .advert p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
 }
