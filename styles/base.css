@@ -154,13 +154,37 @@ h3 {
   color: #000;
   font-weight: bold;
 }
-main p,
-main pre {
+p,
+pre {
   font-family: var(--font-style);
   font-size: 1.2rem;
 }
+#home {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.card {
+  border: 1px solid #000;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+.card img,
+.card iframe {
+  width: 100%;
+  height: auto;
+}
+figure {
+  width: 100%;
+  padding: 1rem;
+}
+figure iframe {
+  width: 100%;
+  height: auto;
+}
 
-/*Styling for bookin form*/
+/*Styling for #book form*/
 #book {
   display: block;
   width: 100%;
@@ -210,7 +234,7 @@ div.instruct {
 #submitBtn {
   width: 90%;
   max-width: 18rem;
-  margin: 3rem 2rem 1rem 0;
+  margin: 3rem 2rem 1rem 1rem;
 }
 #response {
   width: 80%;
@@ -218,6 +242,14 @@ div.instruct {
   font-family: var(--font-style);
   font-size: 1.2rem;
   margin: 3rem auto;
+}
+/*About CSS*/
+#about {
+  padding: 1rem;
+}
+#mission img {
+  width: 100%;
+  height: auto;
 }
 footer {
   width: 100%;
@@ -245,4 +277,5 @@ footer .media-icons {
 }
 footer p:last-of-type {
   padding-top: 1.5rem;
+  font-size: 0.7rem;
 }
