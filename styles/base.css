@@ -251,6 +251,13 @@ div.instruct {
   width: 100%;
   height: auto;
 }
+#services {
+  padding: 1rem;
+}
+#services img {
+  width: 100%;
+  height: auto;
+}
 footer {
   width: 100%;
   background-color: var(--sec-color);
